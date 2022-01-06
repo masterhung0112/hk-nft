@@ -1,6 +1,7 @@
 module.exports = {
   rootDir: "test",
-  testEnvironment: "jsdom",
+  preset: "ts-jest",
+  // testEnvironment: "jsdom",
   transform: {
     "^.+\\.(j|t)sx?$": "babel-jest",
   },
@@ -9,4 +10,5 @@ module.exports = {
     "single-spa-react/parcel": "single-spa-react/lib/cjs/parcel.cjs",
   },
   setupFilesAfterEnv: ["@testing-library/jest-dom"],
+  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json"],
 };

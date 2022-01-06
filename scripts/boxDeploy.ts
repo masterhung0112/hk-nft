@@ -14,12 +14,12 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const HkNFT = await ethers.getContractFactory("HkNFT");
+  const HkNFT = await ethers.getContractFactory("Box");
   const hkNFT = await HkNFT.deploy();
 
   await hkNFT.deployed();
 
-  console.log("HkNFT deployed to:", hkNFT.address);
+  console.log("Box deployed to:", hkNFT.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

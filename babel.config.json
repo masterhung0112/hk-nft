@@ -22,7 +22,7 @@
     "test": {
       "presets": [
         ["@babel/preset-env", {
-          "targets": "current node"
+          "targets": { "node": "current"}
         }]
       ]
     }
